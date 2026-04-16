@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Christian parenting coach helping families raise emotionally strong, confident and God-fearing children through love, wisdom and prayer.">
+
+<meta name="keywords" content="parenting advice, Christian parenting, child counselling, emotional intelligence for kids, parenting coach Nigeria">
+
+<meta name="author" content="My Child and I with Oyin">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<meta charset="UTF-8">
+<title>mychildandiwithoyin|Article</title>
+<meta name="description" content="Christian parenting coach helping families raise emotionally strong, confident and God-fearing children through wisdom, love and prayer.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico.png" type="image/png">
+
+</head>
+<body>
+   <!-- Navigation -->
+  <header class="hero">
+  <nav class="nav">
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="Oyin Logo">
+    </a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-oyin.html">About Oyin</a></li>
+    <li><a href="counselling.html">Counselling</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <div class="hero-slider">
+    <img src="images/img3.jpg" class="slide active">
+    <img src="images/img2.jpg" class="slide">
+  </div>
+
+  <div class="hero-content">
+    <h1>Raising Godly Children<br>with Wisdom & Prayer</h1>
+    <p>Guidance, prayers, and support for parents<br>who want the best for their children.</p>
+      <br/>
+      <br/>
+    <div class="buttons">
+      <a href="#advice" class="btn">Read Advice</a>
+      <a href="#contact" class="btn outline">Book Counselling</a>
+    </div>
+  </div>
+</header>
+<main>
+<section id="singlePost">
+ <h1 id="title"></h1>
+  <div class="article-container">
+  <a href="blog.html">← Back to Blog</a>
+  <div class="article-hero">
+    <img id="image" src="images/placeholder.jpg" alt="Blog Post Image">
+  </div>
+  <div id="content"></div>
+    </div>
+</section>
+</main>
+  
+      <!-- WhatsApp floating button -->
+<a href="https://wa.me/33766795053" class="whatsapp-float" target="_blank">
+  💬
+  <span class="whatsapp-tooltip">Chat with us</span>
+</a>
+  
+<!-- Scripts at the very bottom -->
+<script src="posts.js"></script>
+<script>
+const id = new URLSearchParams(window.location.search).get("id");
+const post = posts.find(p => p.id == id);
+
+document.getElementById("title").innerText = post.title;
+document.getElementById("image").src = post.image;
+document.getElementById("content").innerHTML = post.content;
+</script>
+        
+</body>
+</html>

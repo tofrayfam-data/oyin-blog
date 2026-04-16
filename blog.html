@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Christian parenting coach helping families raise emotionally strong, confident and God-fearing children through love, wisdom and prayer.">
+
+<meta name="keywords" content="parenting advice, Christian parenting, child counselling, emotional intelligence for kids, parenting coach Nigeria">
+
+<meta name="author" content="My Child and I with Oyin">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Child and I with Oyin | Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico.png" type="image/png">
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="hero">
+  <nav class="nav">
+    <a href="#" class="logo">
+      <img src="images/logo.png" alt="Oyin Logo">
+    </a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-oyin.html">About Oyin</a></li>
+    <li><a href="counselling.html">Counselling</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <div class="hero-slider">
+    <img src="images/img3.jpg" class="slide active">
+    <img src="images/img2.jpg" class="slide">
+  </div>
+
+  <div class="hero-content">
+    <h1>Raising Godly Children<br>with Wisdom & Prayer</h1>
+    <p>Guidance, prayers, and support for parents<br>who want the best for their children.</p>
+      <br/>
+      <br/>
+    <div class="buttons">
+      <a href="counselling.html" class="btn">Read Advice</a>
+      <a href="contact.html" class="btn outline">Book Counselling</a>
+    </div>
+  </div>
+</header>
+
+  <!-- Category Buttons -->
+  <div class="hero-caption-container">
+  <div class="hero-caption-inner">
+    <span id="hero-caption"></span>
+  </div>
+</div>
+
+<section class="blog-hero">
+  <h1>Parenting Insights</h1>
+  <p>Guidance, stories, and expert tips to help you raise confident children.</p>
+</section>
+
+<section class="blog-categories">
+  <a href="category-advice.html" class="button">Advice</a>
+  <a href="category-teens.html" class="button">Teens</a>
+  <a href="category-parents.html" class="button">Parents</a>
+  <a href="category-spiritual_growth.html" class="button">Spiritual Growth</a>
+</section>
+
+  <!-- Search -->
+  <section class="blog-search">
+    <input type="text" id="search" placeholder="Search articles...">
+    <button id="search-btn" type="button">Search</button>
+  </section>
+
+  <!-- No results message -->
+  <div id="no-results" style="display:none; text-align:center; color:#FF6F91; margin-top:20px;">
+    No articles found.
+  </div>
+  
+  <section class="featured-post">
+  <img src="images/emo.jpg">
+  <div>
+    <h2>How to Handle A Stubborn Child</h2>
+    <p>Dealing with a stubborn child can be tough, but it’s a natural part of growing up. Often, stubborn behavior reflects a child’s desire for independence or simply testing boundaries. Here are practical tips to handle it calmly and effectively:</p>
+    <a href="counselling.html">Read Article →</a>
+  </div>
+</section>
+
+  <!-- Blog Grid -->
+  <section class="blog-grid" id="blogGrid"></section>
+  <div id="pagination" class="pagination"></div>
+
+  
+  
+  <section class="contact fade-in">
+  <div class="contact-box">
+    <div>
+      <h2>Contact Us</h2>
+      <p>+33 7 66 79 50 53</p>
+    </div>
+
+    <form 
+  action="https://formsubmit.co/tunchilld@gmail.com" 
+  method="POST" 
+  class="contact-form"
+>
+
+  <!-- settings -->
+  <input type="hidden" name="_subject" value="New Message from Oyin Website">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="thank-you.html">
+
+  <input type="text" name="name" placeholder="Name" required>
+
+  <input type="email" name="email" placeholder="Email" required>
+
+  <textarea 
+    name="message" 
+    placeholder="Write your message here..." 
+    rows="5"
+    required
+  ></textarea>
+
+  <button type="submit">Send</button>
+
+</form>
+
+  </div>
+</section>
+  
+  
+  
+      <!-- WhatsApp floating button -->
+<a href="https://wa.me/33766795053" class="whatsapp-float" target="_blank">
+  💬
+  <span class="whatsapp-tooltip">Chat with us</span>
+</a>
+  
+
+  <!-- Scripts -->
+  
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+  hamburger.classList.toggle('active');  // animate to X
+});
+</script>
+  
+
+  <script>
+let slides = document.querySelectorAll(".hero-slider img");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 5000);
+</script>
+  
+  
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const captions = [
+    "Parenting can be challenging, but you don’t have to do it alone. I guide parents with love, insight, and practical strategies—helping you build deeper connections, navigate challenges, and raise confident, happy children.",
+    "Every parent has the power to shape a thriving family. With the right guidance, we transform overwhelm into clarity, frustration into understanding, and everyday parenting into a journey of joy and connection.",
+    "Raising children today isn’t easy—but with evidence-based strategies and personalized support, you can foster resilience, confidence, and harmony in your family. Let’s make parenting a journey you enjoy, not just endure."
+  ];
+
+  const colors = ["#FF6F91", "#6FB1FC", "#FFD97D"]; // pastel/fancy colors
+  const captionElement = document.getElementById('hero-caption');
+  let captionIndex = 0;
+  let charIndex = 0;
+  let typingSpeed = 40;
+  let erasingSpeed = 25;
+  let delayBetween = 3000;
+
+  function typeCaption() {
+    // Set color and float effect
+    captionElement.style.color = colors[captionIndex];
+    captionElement.classList.add('float-up');
+
+    if (charIndex < captions[captionIndex].length) {
+      captionElement.textContent += captions[captionIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(typeCaption, typingSpeed);
+    } else {
+      setTimeout(eraseCaption, delayBetween);
+    }
+  }
+
+  function eraseCaption() {
+    if (charIndex > 0) {
+      captionElement.textContent = captions[captionIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(eraseCaption, erasingSpeed);
+    } else {
+      // reset float effect for next caption
+      captionElement.classList.remove('float-up');
+
+      captionIndex = (captionIndex + 1) % captions.length;
+      setTimeout(typeCaption, typingSpeed);
+    }
+  }
+
+  // Start the effect
+  typeCaption();
+});
+</script>
+    
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const searchInput = document.getElementById("search");
+  const searchBtn = document.getElementById("search-btn");
+  const cards = document.querySelectorAll(".blog-card");
+  const noResults = document.getElementById("no-results");
+
+  function filterCards() {
+    const query = searchInput.value.toLowerCase().trim();
+    let found = false;
+
+    cards.forEach(card => {
+      const title = card.dataset.title.toLowerCase();
+
+      if (title.includes(query)) {
+        card.style.display = "block";
+        found = true;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+   if (!found && query !== "") {
+  noResults.classList.add("show");
+} else {
+  noResults.classList.remove("show");
+}
+
+  }
+
+  searchInput.addEventListener("input", filterCards);
+  searchBtn.addEventListener("click", filterCards);
+
+});
+</script>
+ 
+  
+<script src="posts.js"></script>
+<script src="blog.js"></script>
+
+</body>
+</html>
